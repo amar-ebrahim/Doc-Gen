@@ -11,6 +11,18 @@ public class DocxGenerationService {
     public DocxGenerationService() {
     }
 
+    public String generateDocxBase64FromBytes(String templateBase64, String jsonPayload) {
+        try {
+            byte[] templateBytes = Base64.getDecoder().decode(templateBase64);
+            byte[] docx = DocumentGenerator.getInstance().generateDocx(templateBytes, jsonPayload);
+            return Base64.getEncoder().encodeToString(docx);
+        } catch (DocumentGenerationException e) {
+            throw new DocxGenerationServiceException(formatError("<direct-bytes>", jsonPayload, e), e);
+        } catch (RuntimeException e) {
+            throw new DocxGenerationServiceException(formatUnexpectedError("<direct-bytes>", jsonPayload, e), e);
+        }
+    }
+
     public String generateDocxBase64(String templateName, String jsonPayload) {
         try {
             byte[] docx = DocumentGenerator.getInstance().generateDocx(templateName, jsonPayload);
