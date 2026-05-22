@@ -16,11 +16,12 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.StringReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
@@ -30,13 +31,16 @@ import java.util.regex.Pattern;
 
 class XmlPartTransformer {
     private static final String WORD_NS = "http://schemas.openxmlformats.org/wordprocessingml/2006/main";
+    private static final String W14_NS = "http://schemas.microsoft.com/office/word/2010/wordml";
     private static final Pattern PLACEHOLDER = Pattern.compile("\\{\\{\\s*([A-Za-z0-9_.\\[\\]-]+)\\s*}}");
     private static final Pattern TABLE_PLACEHOLDER = Pattern.compile("\\{\\{\\s*([A-Za-z0-9_.-]+)\\[\\]\\.([A-Za-z0-9_.-]+)\\s*}}");
+    private static final Set<String> TRUTHY = new HashSet<>(Arrays.asList("true", "1", "yes", "checked", "on"));
 
     byte[] transform(byte[] xmlBytes, Map<String, String> values,
                      Map<String, List<Map<String, String>>> tables) throws DocumentGenerationException {
         Document document = parse(xmlBytes);
         repeatTableRows(document, tables);
+        replaceCheckboxControls(document, values);
         replaceFlatPlaceholders(document, values);
         return serialize(document);
     }
@@ -138,6 +142,92 @@ class XmlPartTransformer {
         }
         matcher.appendTail(output);
         return output.toString();
+    }
+
+    // Handles Word content-control checkboxes whose <w:tag w:val="{{key}}"/> matches a flat_mapping key.
+    // Sets w14:checked val to 1/0 and updates the visible symbol character in sdtContent.
+    private void replaceCheckboxControls(Document document, Map<String, String> values) {
+        List<Element> sdts = elementsByLocalName(document, "sdt");
+        for (Element sdt : sdts) {
+            Element sdtPr = firstChildElement(sdt, WORD_NS, "sdtPr");
+            if (sdtPr == null) continue;
+
+            Element checkboxEl = firstChildElement(sdtPr, W14_NS, "checkbox");
+            if (checkboxEl == null) continue;
+
+            Element tagEl = firstChildElement(sdtPr, WORD_NS, "tag");
+            if (tagEl == null) continue;
+
+            String tagVal = tagEl.getAttributeNS(WORD_NS, "val");
+            if (tagVal == null || tagVal.isEmpty()) continue;
+
+            String key = tagVal;
+            Matcher m = PLACEHOLDER.matcher(tagVal.trim());
+            if (m.matches()) {
+                key = m.group(1);
+            }
+
+            // Always strip {{}} from tag and alias so no {{ markers remain in the output XML
+            tagEl.setAttributeNS(WORD_NS, "w:val", key);
+            Element aliasEl = firstChildElement(sdtPr, WORD_NS, "alias");
+            if (aliasEl != null) {
+                String aliasVal = aliasEl.getAttributeNS(WORD_NS, "val");
+                if (aliasVal != null && PLACEHOLDER.matcher(aliasVal.trim()).matches()) {
+                    aliasEl.setAttributeNS(WORD_NS, "w:val", key);
+                }
+            }
+
+            String value = values.get(key);
+            if (value == null) continue;
+
+            boolean checked = TRUTHY.contains(value.trim().toLowerCase());
+
+            Element checkedEl = firstChildElement(checkboxEl, W14_NS, "checked");
+            if (checkedEl != null) {
+                checkedEl.setAttributeNS(W14_NS, "w14:val", checked ? "1" : "0");
+            }
+
+            Element sdtContent = firstChildElement(sdt, WORD_NS, "sdtContent");
+            if (sdtContent == null) continue;
+            List<Node> textNodes = wordTextNodes(sdtContent);
+            if (!textNodes.isEmpty()) {
+                String symbol = checked
+                        ? checkboxChar(checkboxEl, "checkedState", "2611")
+                        : checkboxChar(checkboxEl, "uncheckedState", "2610");
+                textNodes.get(0).setTextContent(symbol);
+            }
+        }
+    }
+
+    private String checkboxChar(Element checkboxEl, String stateLocalName, String fallbackHex) {
+        NodeList children = checkboxEl.getChildNodes();
+        for (int i = 0; i < children.getLength(); i++) {
+            Node child = children.item(i);
+            if (child instanceof Element
+                    && stateLocalName.equals(child.getLocalName())
+                    && W14_NS.equals(child.getNamespaceURI())) {
+                String val = ((Element) child).getAttributeNS(W14_NS, "val");
+                if (val != null && !val.isEmpty()) {
+                    try {
+                        return new String(Character.toChars(Integer.parseInt(val, 16)));
+                    } catch (NumberFormatException ignored) { }
+                }
+            }
+        }
+        return new String(Character.toChars(Integer.parseInt(fallbackHex, 16)));
+    }
+
+    private Element firstChildElement(Node parent, String ns, String localName) {
+        NodeList children = parent.getChildNodes();
+        for (int i = 0; i < children.getLength(); i++) {
+            Node child = children.item(i);
+            if (child instanceof Element
+                    && localName.equals(child.getLocalName())
+                    && ns.equals(child.getNamespaceURI())) {
+                return (Element) child;
+            }
+        }
+        return null;
     }
 
     private Document parse(byte[] xmlBytes) throws DocumentGenerationException {
