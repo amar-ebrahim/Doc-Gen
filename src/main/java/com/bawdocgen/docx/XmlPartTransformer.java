@@ -36,13 +36,98 @@ class XmlPartTransformer {
     private static final Pattern TABLE_PLACEHOLDER = Pattern.compile("\\{\\{\\s*([A-Za-z0-9_.-]+)\\[\\]\\.([A-Za-z0-9_.-]+)\\s*}}");
     private static final Set<String> TRUTHY = new HashSet<>(Arrays.asList("true", "1", "yes", "checked", "on"));
 
+    // String-based split-placeholder patterns (avoids DOM re-serialization which reorders XML attributes).
+    // 3-way: Word spell-checker splits {{KEY}} into three <w:t> nodes.
+    // Allows leading text (e.g. spaces) before {{ in the first t, and trailing text after }} in the last t.
+    // Tried before 2-way so the middle key-t is not consumed by the 2-way lazy match.
+    private static final Pattern SPLIT_3WAY = Pattern.compile(
+            "(<w:t[^>]*>)([^{<]*)\\{\\{(</w:t>)"               // g1=t1-open, g2=pre-{{ text, g3=</w:t>
+            + "((?:(?!</w:p>).)*?)"                              // g4=pre-key XML
+            + "(<w:t[^>]*>)([A-Za-z0-9_.\\[\\]-]+)(</w:t>)"    // g5=key-t-open, g6=key, g7=</w:t>
+            + "((?:(?!</w:p>).)*?)"                              // g8=post-key XML
+            + "(<w:t[^>]*>)\\}\\}([^<]*</w:t>)",                // g9=last-t-open, g10=text-after-}}+</w:t>
+            Pattern.DOTALL);
+    // 2-way: handles all two-<w:t> splits — key may be split across both elements.
+    // Allows leading text before {{ and trailing text after }}.
+    // e.g. "spaces{{cust" / "omer.name}}", "{{KEY" / "}}", "{{" / "KEY}}"
+    private static final Pattern SPLIT_2WAY = Pattern.compile(
+            "(<w:t[^>]*>)([^{<]*)\\{\\{([A-Za-z0-9_.\\[\\]-]*)(</w:t>)" // g1=t1-open, g2=pre-{{, g3=key-start, g4=</w:t>
+            + "((?:(?!</w:p>).)*?)"                                        // g5=intermediate XML
+            + "(<w:t[^>]*>)([A-Za-z0-9_.\\[\\]-]*)\\}\\}([^<]*</w:t>)",  // g6=t2-open, g7=key-end, g8=text-after-}}+</w:t>
+            Pattern.DOTALL);
+
     byte[] transform(byte[] xmlBytes, Map<String, String> values,
                      Map<String, List<Map<String, String>>> tables) throws DocumentGenerationException {
+        String xml = new String(xmlBytes, StandardCharsets.UTF_8);
+        // String-based fast path: preserves original XML attribute order and namespace declarations.
+        // Used when no structural DOM operations are needed (no table row repeating, no checkboxes).
+        if (tables.isEmpty() && !xml.contains("w14:checkbox")) {
+            xml = replaceSplitPlaceholders(xml, values);
+            xml = replaceSimplePlaceholders(xml, values);
+            if (!PLACEHOLDER.matcher(xml).find()) {
+                return xml.getBytes(StandardCharsets.UTF_8);
+            }
+            // Unresolvable split pattern remains — fall through to DOM for correctness.
+        }
         Document document = parse(xmlBytes);
         repeatTableRows(document, tables);
         replaceCheckboxControls(document, values);
         replaceFlatPlaceholders(document, values);
         return serialize(document);
+    }
+
+    // Handles split-run patterns that Word's spell-checker introduces when placeholder keys
+    // contain underscores or camelCase that Word flags as misspellings.
+    // SPLIT_3WAY is tried first so its middle key-t is not consumed by the 2-way lazy match.
+    private String replaceSplitPlaceholders(String xml, Map<String, String> values) {
+        xml = applyPattern(xml, SPLIT_3WAY, values, new SplitReplacer() {
+            public String replace(Matcher m, String value) {
+                // first-t: pre-{{ text + value; key-t: emptied; last-t: text-after-}} preserved
+                return m.group(1) + m.group(2) + value + m.group(3)
+                        + m.group(4) + m.group(5) + m.group(7)
+                        + m.group(8) + m.group(9) + m.group(10);
+            }
+            public String key(Matcher m) { return m.group(6); }
+        });
+        xml = applyPattern(xml, SPLIT_2WAY, values, new SplitReplacer() {
+            public String replace(Matcher m, String value) {
+                // first-t: pre-{{ text + value; last-t: text-after-}} preserved; intermediate XML kept
+                return m.group(1) + m.group(2) + value + m.group(4)
+                        + m.group(5) + m.group(6) + m.group(8);
+            }
+            public String key(Matcher m) { return m.group(3) + m.group(7); }
+        });
+        return xml;
+    }
+
+    private interface SplitReplacer {
+        String key(Matcher m);
+        String replace(Matcher m, String escapedValue);
+    }
+
+    private String applyPattern(String xml, Pattern pattern, Map<String, String> values, SplitReplacer replacer) {
+        Matcher m = pattern.matcher(xml);
+        StringBuffer sb = new StringBuffer();
+        while (m.find()) {
+            String key = replacer.key(m);
+            String raw = values.containsKey(key) ? values.get(key) : "";
+            m.appendReplacement(sb, Matcher.quoteReplacement(replacer.replace(m, xmlEscape(raw))));
+        }
+        m.appendTail(sb);
+        return sb.toString();
+    }
+
+    private String replaceSimplePlaceholders(String xml, Map<String, String> values) {
+        for (Map.Entry<String, String> entry : values.entrySet()) {
+            String placeholder = "{{" + entry.getKey() + "}}";
+            String value = xmlEscape(entry.getValue() == null ? "" : entry.getValue());
+            xml = xml.replace(placeholder, value);
+        }
+        return xml;
+    }
+
+    private static String xmlEscape(String value) {
+        return value.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("\"", "&quot;");
     }
 
     Set<String> extractPlaceholders(byte[] xmlBytes) throws DocumentGenerationException {
