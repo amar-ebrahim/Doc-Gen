@@ -36,6 +36,9 @@ class XmlPartTransformer {
     private static final Pattern TABLE_PLACEHOLDER = Pattern.compile("\\{\\{\\s*([A-Za-z0-9_.-]+)\\[\\]\\.([A-Za-z0-9_.-]+)\\s*}}");
     private static final Set<String> TRUTHY = new HashSet<>(Arrays.asList("true", "1", "yes", "checked", "on"));
 
+    // Matches a complete <w:t> element including its text content and optional attributes.
+    private static final Pattern WT_TEXT = Pattern.compile("<w:t([^>]*)>([^<]*)</w:t>");
+
     // String-based split-placeholder patterns (avoids DOM re-serialization which reorders XML attributes).
     // 3-way: Word spell-checker splits {{KEY}} into three <w:t> nodes.
     // Allows leading text (e.g. spaces) before {{ in the first t, and trailing text after }} in the last t.
@@ -78,8 +81,10 @@ class XmlPartTransformer {
 
     // Handles split-run patterns that Word's spell-checker introduces when placeholder keys
     // contain underscores or camelCase that Word flags as misspellings.
-    // SPLIT_3WAY is tried first so its middle key-t is not consumed by the 2-way lazy match.
+    // collapseSplitPlaceholders runs first to reassemble any multi-run key into a single <w:t>;
+    // SPLIT_3WAY and SPLIT_2WAY then handle any remaining two-/three-node splits.
     private String replaceSplitPlaceholders(String xml, Map<String, String> values) {
+        xml = collapseSplitPlaceholders(xml);
         xml = applyPattern(xml, SPLIT_3WAY, values, new SplitReplacer() {
             public String replace(Matcher m, String value) {
                 // first-t: pre-{{ text + value; key-t: emptied; last-t: text-after-}} preserved
@@ -98,6 +103,108 @@ class XmlPartTransformer {
             public String key(Matcher m) { return m.group(3) + m.group(7); }
         });
         return xml;
+    }
+
+    /**
+     * Collapses multi-run split placeholders into a single {@code <w:t>} element.
+     *
+     * Word's spell-checker splits camelCase keys like {@code {{BranchName}}} across multiple
+     * {@code <w:t>} nodes (e.g. {@code <w:t>Branch</w:t>} + {@code <w:t>Name</w:t>}).
+     * This method finds every {@code {{ … }}} region that spans XML tags, concatenates the
+     * text content of all intermediate {@code <w:t>} elements to rebuild the full key, writes
+     * {@code {{FULLKEY}}} into the first element, and clears the intermediate ones so that
+     * {@link #replaceSimplePlaceholders} can match the result with a plain string replace.
+     */
+    private String collapseSplitPlaceholders(String xml) {
+        StringBuilder out = new StringBuilder(xml.length());
+        int pos = 0;
+        while (pos < xml.length()) {
+            int open = xml.indexOf("{{", pos);
+            if (open < 0) { out.append(xml, pos, xml.length()); break; }
+            int close = xml.indexOf("}}", open + 2);
+            if (close < 0) { out.append(xml, pos, xml.length()); break; }
+
+            // If there is no XML markup between {{ and }} the placeholder is already compact.
+            if (xml.indexOf('<', open + 2) >= close) {
+                out.append(xml, pos, close + 2);
+                pos = close + 2;
+                continue;
+            }
+
+            int wt1Start   = findContainingWtStart(xml, open);
+            int lastWtStart = findContainingWtStart(xml, close);
+            if (wt1Start < 0 || lastWtStart < 0 || wt1Start == lastWtStart) {
+                // Cannot determine structure — copy verbatim and advance past }}.
+                out.append(xml, pos, close + 2);
+                pos = close + 2;
+                continue;
+            }
+
+            int wt1TagEnd      = xml.indexOf('>', wt1Start) + 1;
+            int wt1CloseTag    = xml.indexOf("</w:t>", wt1TagEnd);
+            int lastWtTagEnd   = xml.indexOf('>', lastWtStart) + 1;
+            int lastWtCloseTag = xml.indexOf("</w:t>", lastWtTagEnd);
+            if (wt1CloseTag < 0 || lastWtCloseTag < 0) {
+                out.append(xml, pos, close + 2);
+                pos = close + 2;
+                continue;
+            }
+
+            // Text in the first t: split into pre-{{ part and post-{{ part (key start).
+            String wt1Content = xml.substring(wt1TagEnd, wt1CloseTag);
+            int braceInT1 = wt1Content.indexOf("{{");
+            String preText  = braceInT1 > 0  ? wt1Content.substring(0, braceInT1) : "";
+            String keyStart = braceInT1 >= 0 ? wt1Content.substring(braceInT1 + 2) : "";
+
+            // Text in the last t: split into pre-}} part (key end) and post-}} trailing text.
+            String lastWtContent = xml.substring(lastWtTagEnd, lastWtCloseTag);
+            int braceInLastT = lastWtContent.indexOf("}}");
+            String keyEnd   = braceInLastT > 0  ? lastWtContent.substring(0, braceInLastT) : "";
+            String postText = braceInLastT >= 0 ? lastWtContent.substring(braceInLastT + 2) : "";
+
+            // Collect key fragments from every <w:t> between the two boundary elements.
+            String middleXml = xml.substring(wt1CloseTag + 6, lastWtStart);
+            StringBuilder key = new StringBuilder(keyStart);
+            Matcher wtm = WT_TEXT.matcher(middleXml);
+            while (wtm.find()) {
+                key.append(wtm.group(2).replace("{{", "").replace("}}", ""));
+            }
+            key.append(keyEnd);
+
+            // Emit: everything before the first t, then the normalised first t,
+            // then the middle XML with all <w:t> elements emptied, then the last t
+            // containing only any trailing text (the }} itself is consumed into {{KEY}}).
+            String wt1Tag    = xml.substring(wt1Start, wt1TagEnd);
+            String lastWtTag = xml.substring(lastWtStart, lastWtTagEnd);
+            String emptyMiddle = WT_TEXT.matcher(middleXml).replaceAll("<w:t$1></w:t>");
+
+            out.append(xml, pos, wt1Start);
+            out.append(wt1Tag).append(preText)
+               .append("{{").append(key).append("}}").append("</w:t>");
+            out.append(emptyMiddle);
+            out.append(lastWtTag).append(postText).append("</w:t>");
+            pos = lastWtCloseTag + 6;
+        }
+        return out.toString();
+    }
+
+    /**
+     * Returns the start index of the {@code <w:t>} element that contains {@code pos},
+     * or {@code -1} if {@code pos} is not inside a {@code <w:t>} element.
+     */
+    private int findContainingWtStart(String xml, int pos) {
+        int lastOpen  = xml.lastIndexOf("<w:t", pos - 1);
+        if (lastOpen < 0) return -1;
+        if (lastOpen + 4 >= xml.length()) return -1;
+        char next = xml.charAt(lastOpen + 4);
+        // Reject <w:tr>, <w:table>, <w:tc> etc. — only accept <w:t> and <w:t [attrs]>
+        if (next != '>' && next != ' ') return -1;
+        // If a </w:t> appears between lastOpen and pos, that w:t was already closed.
+        int lastClose = xml.lastIndexOf("</w:t>", pos - 1);
+        if (lastClose >= 0 && lastClose > lastOpen) return -1;
+        int tagEnd = xml.indexOf('>', lastOpen);
+        if (tagEnd < 0 || tagEnd >= pos) return -1;
+        return lastOpen;
     }
 
     private interface SplitReplacer {
