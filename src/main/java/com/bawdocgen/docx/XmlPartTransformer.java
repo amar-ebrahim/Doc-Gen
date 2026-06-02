@@ -74,6 +74,7 @@ class XmlPartTransformer {
         }
         Document document = parse(xmlBytes);
         repeatTableRows(document, tables);
+        repeatBodyParagraphs(document, tables);
         replaceCheckboxControls(document, values);
         replaceFlatPlaceholders(document, values);
         return serialize(document);
@@ -267,11 +268,101 @@ class XmlPartTransformer {
             if (tableRows != null) {
                 for (Map<String, String> tableRow : tableRows) {
                     Node clone = row.cloneNode(true);
-                    replaceTextNodes(clone, rowScopedValues(tableName, tableRow));
+                    removeBookmarks(clone);
+                    replaceTextNodesInRow(clone, rowScopedValues(tableName, tableRow));
                     parent.insertBefore(clone, row);
                 }
             }
             parent.removeChild(row);
+        }
+    }
+
+    // Removes <w:bookmarkStart> and <w:bookmarkEnd> from cloned nodes to prevent duplicate IDs.
+    private void removeBookmarks(Node node) {
+        NodeList children = node.getChildNodes();
+        List<Node> toRemove = new ArrayList<>();
+        for (int i = 0; i < children.getLength(); i++) {
+            Node child = children.item(i);
+            if (child instanceof Element) {
+                String local = child.getLocalName();
+                if (("bookmarkStart".equals(local) || "bookmarkEnd".equals(local))
+                        && WORD_NS.equals(child.getNamespaceURI())) {
+                    toRemove.add(child);
+                } else {
+                    removeBookmarks(child);
+                }
+            }
+        }
+        for (Node n : toRemove) {
+            node.removeChild(n);
+        }
+    }
+
+    // Handles {{tableName[].field}} placeholders that live in body paragraphs (not in <w:tr>).
+    // Clones the paragraph once per table row, substitutes the placeholder, and removes the template paragraph.
+    private void repeatBodyParagraphs(Document document, Map<String, List<Map<String, String>>> tables) {
+        List<Element> paragraphs = new ArrayList<>(elementsByLocalName(document, "p"));
+        for (Element paragraph : paragraphs) {
+            if (!paragraph.getParentNode().getLocalName().equals("body")
+                    && !paragraph.getParentNode().getLocalName().equals("txbxContent")) {
+                // Only process top-level body paragraphs — table-cell paragraphs are handled by repeatTableRows
+                Node ancestor = paragraph.getParentNode();
+                boolean inTc = false;
+                while (ancestor != null) {
+                    if ("tc".equals(ancestor.getLocalName()) && WORD_NS.equals(ancestor.getNamespaceURI())) {
+                        inTc = true;
+                        break;
+                    }
+                    ancestor = ancestor.getParentNode();
+                }
+                if (inTc) continue;
+            }
+
+            String paraText = combinedText(paragraph);
+            Matcher matcher = TABLE_PLACEHOLDER.matcher(paraText);
+            if (!matcher.find()) continue;
+
+            String tableName = matcher.group(1);
+            List<Map<String, String>> tableRows = tables.get(tableName);
+            Node parent = paragraph.getParentNode();
+            if (parent == null) continue;
+
+            if (tableRows != null) {
+                for (Map<String, String> tableRow : tableRows) {
+                    Node clone = paragraph.cloneNode(true);
+                    removeBookmarks(clone);
+                    replaceTextNodes(clone, rowScopedValues(tableName, tableRow));
+                    parent.insertBefore(clone, paragraph);
+                }
+            }
+            parent.removeChild(paragraph);
+        }
+    }
+
+    // Replaces placeholders per paragraph within a table row so that the combined-text
+    // fallback in replaceTextNodes operates on one paragraph at a time, not the entire row.
+    private void replaceTextNodesInRow(Node row, Map<String, String> values) {
+        List<Node> paragraphs = new ArrayList<>();
+        collectByLocalName(row, "p", paragraphs);
+        if (paragraphs.isEmpty()) {
+            replaceTextNodes(row, values);
+        } else {
+            for (Node paragraph : paragraphs) {
+                replaceTextNodes(paragraph, values);
+            }
+        }
+    }
+
+    private void collectByLocalName(Node node, String localName, List<Node> result) {
+        if (node instanceof Element
+                && localName.equals(node.getLocalName())
+                && WORD_NS.equals(node.getNamespaceURI())) {
+            result.add(node);
+            return;
+        }
+        NodeList children = node.getChildNodes();
+        for (int i = 0; i < children.getLength(); i++) {
+            collectByLocalName(children.item(i), localName, result);
         }
     }
 
