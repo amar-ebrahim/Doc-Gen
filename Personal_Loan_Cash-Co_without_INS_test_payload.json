@@ -1,0 +1,31 @@
+{
+  "flat_mapping": {
+    "Bank_Representative": "Rami Haddad",
+    "LoanPeriod": "36",
+    "LoanAmount": "30000",
+    "Wording": "Thirty thousand fresh US dollars",
+    "LoanPurpose_1": "home renovation",
+    "Rate": "8.50",
+    "APR": "9.20",
+    "cashcobox": true,
+    "cashAcc": "001-987654-002",
+    "PGBox": true,
+    "personalGaranteeName": "Nadim Karim",
+    "GranteeDate": "09/06/2026",
+    "PGAmount": "30000",
+    "PGWording": "Thirty thousand fresh US dollars",
+    "NetLoanAmt": "29400",
+    "TotalLoanAmt": "32400",
+    "MonthlyPayment": "900",
+    "Date": "09/06/2026",
+    "CIFID": "CIF-20260609-001",
+    "First_Name": "Karim Nasser"
+  },
+  "tables": {
+    "First_Party": [
+      {
+        "partyDetails": "Karim Nasser, Lebanese, born on 15/03/1988, CIF ID CIF-20260609-001, residing in Beirut, Lebanon."
+      }
+    ]
+  }
+}

@@ -1,0 +1,2289 @@
+{
+  "nodes": [
+    {
+      "id": "file::documentgenerationexception",
+      "label": "DocumentGenerationException.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerationException.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerationException.java:1"
+    },
+    {
+      "id": "documentgenerationexception::documentgenerationexception",
+      "label": "DocumentGenerationException",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerationException.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerationException.java:3"
+    },
+    {
+      "id": "documentgenerationexception::documentgenerationexception::documentgenerationexception",
+      "label": ".DocumentGenerationException",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerationException.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerationException.java:6"
+    },
+    {
+      "id": "documentgenerationexception::documentgenerationexception::geterrorcode",
+      "label": ".getErrorCode",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerationException.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerationException.java:16"
+    },
+    {
+      "id": "file::documentgenerator",
+      "label": "DocumentGenerator.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:1"
+    },
+    {
+      "id": "documentgenerator::documentgenerator",
+      "label": "DocumentGenerator",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:15"
+    },
+    {
+      "id": "documentgenerator::documentgenerator::getinstance",
+      "label": ".getInstance",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:25"
+    },
+    {
+      "id": "documentgenerator::documentgenerator::generatedocx",
+      "label": ".generateDocx",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:29"
+    },
+    {
+      "id": "documentgenerator::documentgenerator::extractplaceholders",
+      "label": ".extractPlaceholders",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:56"
+    },
+    {
+      "id": "documentgenerator::documentgenerator::validatetemplateid",
+      "label": ".validateTemplateId",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:83"
+    },
+    {
+      "id": "documentgenerator::documentgenerator::validatetemplatebytes",
+      "label": ".validateTemplateBytes",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:89"
+    },
+    {
+      "id": "documentgenerator::documentgenerator::logstage",
+      "label": ".logStage",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:95"
+    },
+    {
+      "id": "documentgenerator::documentgenerator::bytelength",
+      "label": ".byteLength",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:104"
+    },
+    {
+      "id": "documentgenerator::documentgenerator::stringlength",
+      "label": ".stringLength",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:108"
+    },
+    {
+      "id": "file::documentgeneratorfactory",
+      "label": "DocumentGeneratorFactory.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGeneratorFactory.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGeneratorFactory.java:1"
+    },
+    {
+      "id": "documentgeneratorfactory::documentgeneratorfactory",
+      "label": "DocumentGeneratorFactory",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGeneratorFactory.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGeneratorFactory.java:3"
+    },
+    {
+      "id": "documentgeneratorfactory::documentgeneratorfactory::documentgeneratorfactory",
+      "label": ".DocumentGeneratorFactory",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGeneratorFactory.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGeneratorFactory.java:4"
+    },
+    {
+      "id": "documentgeneratorfactory::documentgeneratorfactory::getgenerator",
+      "label": ".getGenerator",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGeneratorFactory.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGeneratorFactory.java:7"
+    },
+    {
+      "id": "file::docxgenerationservice",
+      "label": "DocxGenerationService.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:1"
+    },
+    {
+      "id": "docxgenerationservice::docxgenerationservice",
+      "label": "DocxGenerationService",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:8"
+    },
+    {
+      "id": "docxgenerationservice::docxgenerationservice::docxgenerationservice",
+      "label": ".DocxGenerationService",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:11"
+    },
+    {
+      "id": "docxgenerationservice::docxgenerationservice::generatedocxbase64frombytes",
+      "label": ".generateDocxBase64FromBytes",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:14"
+    },
+    {
+      "id": "docxgenerationservice::docxgenerationservice::generatedocxbase64",
+      "label": ".generateDocxBase64",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:26"
+    },
+    {
+      "id": "docxgenerationservice::docxgenerationservice::formaterror",
+      "label": ".formatError",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:37"
+    },
+    {
+      "id": "docxgenerationservice::docxgenerationservice::formatunexpectederror",
+      "label": ".formatUnexpectedError",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:46"
+    },
+    {
+      "id": "docxgenerationservice::docxgenerationservice::rootcausesummary",
+      "label": ".rootCauseSummary",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:55"
+    },
+    {
+      "id": "docxgenerationservice::docxgenerationservice::preview",
+      "label": ".preview",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:63"
+    },
+    {
+      "id": "docxgenerationservice::docxgenerationservice::valueorempty",
+      "label": ".valueOrEmpty",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:71"
+    },
+    {
+      "id": "docxgenerationservice::docxgenerationserviceexception",
+      "label": "DocxGenerationServiceException",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:75"
+    },
+    {
+      "id": "docxgenerationservice::docxgenerationserviceexception::docxgenerationserviceexception",
+      "label": ".DocxGenerationServiceException",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:76"
+    },
+    {
+      "id": "file::documentgeneratorcli",
+      "label": "DocumentGeneratorCli.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java:1"
+    },
+    {
+      "id": "documentgeneratorcli::documentgeneratorcli",
+      "label": "DocumentGeneratorCli",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java:11"
+    },
+    {
+      "id": "documentgeneratorcli::documentgeneratorcli::documentgeneratorcli",
+      "label": ".DocumentGeneratorCli",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java:12"
+    },
+    {
+      "id": "documentgeneratorcli::documentgeneratorcli::main",
+      "label": ".main",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java:15"
+    },
+    {
+      "id": "documentgeneratorcli::documentgeneratorcli::resolvetemplate",
+      "label": ".resolveTemplate",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java:41"
+    },
+    {
+      "id": "documentgeneratorcli::documentgeneratorcli::resolvejson",
+      "label": ".resolveJson",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java:50"
+    },
+    {
+      "id": "file::docxpackageprocessor",
+      "label": "DocxPackageProcessor.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java:1"
+    },
+    {
+      "id": "docxpackageprocessor::docxpackageprocessor",
+      "label": "DocxPackageProcessor",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java:16"
+    },
+    {
+      "id": "docxpackageprocessor::docxpackageprocessor::generate",
+      "label": ".generate",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java:20"
+    },
+    {
+      "id": "docxpackageprocessor::docxpackageprocessor::extractplaceholders",
+      "label": ".extractPlaceholders",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java:48"
+    },
+    {
+      "id": "docxpackageprocessor::docxpackageprocessor::istransformablewordxmlpart",
+      "label": ".isTransformableWordXmlPart",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java:66"
+    },
+    {
+      "id": "docxpackageprocessor::docxpackageprocessor::readallbytes",
+      "label": ".readAllBytes",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java:78"
+    },
+    {
+      "id": "file::docxtemplaterepository",
+      "label": "DocxTemplateRepository.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java:1"
+    },
+    {
+      "id": "docxtemplaterepository::docxtemplaterepository",
+      "label": "DocxTemplateRepository",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java:11"
+    },
+    {
+      "id": "docxtemplaterepository::docxtemplaterepository::gettemplate",
+      "label": ".getTemplate",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java:14"
+    },
+    {
+      "id": "docxtemplaterepository::docxtemplaterepository::loadtemplateunchecked",
+      "label": ".loadTemplateUnchecked",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java:27"
+    },
+    {
+      "id": "docxtemplaterepository::docxtemplaterepository::loadtemplate",
+      "label": ".loadTemplate",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java:35"
+    },
+    {
+      "id": "docxtemplaterepository::docxtemplaterepository::readallbytes",
+      "label": ".readAllBytes",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java:47"
+    },
+    {
+      "id": "docxtemplaterepository::templateloadruntimeexception",
+      "label": "TemplateLoadRuntimeException",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java:58"
+    },
+    {
+      "id": "docxtemplaterepository::templateloadruntimeexception::templateloadruntimeexception",
+      "label": ".TemplateLoadRuntimeException",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java:59"
+    },
+    {
+      "id": "file::docxtemplatesanitizer",
+      "label": "DocxTemplateSanitizer.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:1"
+    },
+    {
+      "id": "docxtemplatesanitizer::docxtemplatesanitizer",
+      "label": "DocxTemplateSanitizer",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:16"
+    },
+    {
+      "id": "docxtemplatesanitizer::docxtemplatesanitizer::sanitize",
+      "label": ".sanitize",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:22"
+    },
+    {
+      "id": "docxtemplatesanitizer::docxtemplatesanitizer::shouldsanitize",
+      "label": ".shouldSanitize",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:49"
+    },
+    {
+      "id": "docxtemplatesanitizer::docxtemplatesanitizer::sanitizexml",
+      "label": ".sanitizeXml",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:53"
+    },
+    {
+      "id": "docxtemplatesanitizer::docxtemplatesanitizer::normalizedecimalwordattributes",
+      "label": ".normalizeDecimalWordAttributes",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:58"
+    },
+    {
+      "id": "docxtemplatesanitizer::docxtemplatesanitizer::roundedinteger",
+      "label": ".roundedInteger",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:69"
+    },
+    {
+      "id": "docxtemplatesanitizer::docxtemplatesanitizer::normalizeshortlanguagetags",
+      "label": ".normalizeShortLanguageTags",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:74"
+    },
+    {
+      "id": "docxtemplatesanitizer::docxtemplatesanitizer::defaultregion",
+      "label": ".defaultRegion",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:86"
+    },
+    {
+      "id": "docxtemplatesanitizer::docxtemplatesanitizer::readallbytes",
+      "label": ".readAllBytes",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:96"
+    },
+    {
+      "id": "file::placeholderpattern",
+      "label": "PlaceholderPattern.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/engine/PlaceholderPattern.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/engine/PlaceholderPattern.java:1"
+    },
+    {
+      "id": "placeholderpattern::placeholderpattern",
+      "label": "PlaceholderPattern",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/engine/PlaceholderPattern.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/engine/PlaceholderPattern.java:5"
+    },
+    {
+      "id": "placeholderpattern::placeholderpattern::placeholderpattern",
+      "label": ".PlaceholderPattern",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/engine/PlaceholderPattern.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/engine/PlaceholderPattern.java:8"
+    },
+    {
+      "id": "file::flatmappingjsonparser",
+      "label": "FlatMappingJsonParser.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/FlatMappingJsonParser.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/FlatMappingJsonParser.java:1"
+    },
+    {
+      "id": "flatmappingjsonparser::flatmappingjsonparser",
+      "label": "FlatMappingJsonParser",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/FlatMappingJsonParser.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/FlatMappingJsonParser.java:12"
+    },
+    {
+      "id": "flatmappingjsonparser::flatmappingjsonparser::parse",
+      "label": ".parse",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/FlatMappingJsonParser.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/FlatMappingJsonParser.java:16"
+    },
+    {
+      "id": "flatmappingjsonparser::flatmappingjsonparser::stringify",
+      "label": ".stringify",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/FlatMappingJsonParser.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/FlatMappingJsonParser.java:41"
+    },
+    {
+      "id": "file::tablemappingjsonparser",
+      "label": "TableMappingJsonParser.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java:1"
+    },
+    {
+      "id": "tablemappingjsonparser::tablemappingjsonparser",
+      "label": "TableMappingJsonParser",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java:13"
+    },
+    {
+      "id": "tablemappingjsonparser::tablemappingjsonparser::parse",
+      "label": ".parse",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java:16"
+    },
+    {
+      "id": "tablemappingjsonparser::tablemappingjsonparser::parserows",
+      "label": ".parseRows",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java:41"
+    },
+    {
+      "id": "tablemappingjsonparser::tablemappingjsonparser::stringify",
+      "label": ".stringify",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java:57"
+    },
+    {
+      "id": "file::bawpersonalloanpayloadtest",
+      "label": "BawPersonalLoanPayloadTest.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java:1"
+    },
+    {
+      "id": "bawpersonalloanpayloadtest::bawpersonalloanpayloadtest",
+      "label": "BawPersonalLoanPayloadTest",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java:23"
+    },
+    {
+      "id": "bawpersonalloanpayloadtest::bawpersonalloanpayloadtest::bawpayloadmatchesbundledpersonalloantemplateandgeneratesdocx",
+      "label": ".bawPayloadMatchesBundledPersonalLoanTemplateAndGeneratesDocx",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java:24"
+    },
+    {
+      "id": "bawpersonalloanpayloadtest::bawpersonalloanpayloadtest::flatmappingkeys",
+      "label": ".flatMappingKeys",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java:47"
+    },
+    {
+      "id": "bawpersonalloanpayloadtest::bawpersonalloanpayloadtest::docxentry",
+      "label": ".docxEntry",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java:54"
+    },
+    {
+      "id": "bawpersonalloanpayloadtest::bawpersonalloanpayloadtest::resourcebytes",
+      "label": ".resourceBytes",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java:74"
+    },
+    {
+      "id": "file::concurrentdocxgenerationtest",
+      "label": "ConcurrentDocxGenerationTest.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/ConcurrentDocxGenerationTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/ConcurrentDocxGenerationTest.java:1"
+    },
+    {
+      "id": "concurrentdocxgenerationtest::concurrentdocxgenerationtest",
+      "label": "ConcurrentDocxGenerationTest",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/ConcurrentDocxGenerationTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/ConcurrentDocxGenerationTest.java:16"
+    },
+    {
+      "id": "concurrentdocxgenerationtest::concurrentdocxgenerationtest::servicesupportsconcurrentbawcalls",
+      "label": ".serviceSupportsConcurrentBawCalls",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/ConcurrentDocxGenerationTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/ConcurrentDocxGenerationTest.java:17"
+    },
+    {
+      "id": "file::docxgenerationservicetest",
+      "label": "DocxGenerationServiceTest.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java:1"
+    },
+    {
+      "id": "docxgenerationservicetest::docxgenerationservicetest",
+      "label": "DocxGenerationServiceTest",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java:14"
+    },
+    {
+      "id": "docxgenerationservicetest::docxgenerationservicetest::generatesbase64docxforbawsupportedsignature",
+      "label": ".generatesBase64DocxForBawSupportedSignature",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java:15"
+    },
+    {
+      "id": "docxgenerationservicetest::docxgenerationservicetest::throwshelpfulerrorwhentemplateismissing",
+      "label": ".throwsHelpfulErrorWhenTemplateIsMissing",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java:26"
+    },
+    {
+      "id": "docxgenerationservicetest::docxgenerationservicetest::throwshelpfulerrorwhenjsonisinvalid",
+      "label": ".throwsHelpfulErrorWhenJsonIsInvalid",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java:37"
+    },
+    {
+      "id": "docxgenerationservicetest::docxgenerationservicetest::resourcestring",
+      "label": ".resourceString",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java:49"
+    },
+    {
+      "id": "docxgenerationservicetest::docxgenerationservicetest::resourcebytes",
+      "label": ".resourceBytes",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java:53"
+    },
+    {
+      "id": "file::docxpackageprocessortest",
+      "label": "DocxPackageProcessorTest.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java:1"
+    },
+    {
+      "id": "docxpackageprocessortest::docxpackageprocessortest",
+      "label": "DocxPackageProcessorTest",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java:20"
+    },
+    {
+      "id": "docxpackageprocessortest::docxpackageprocessortest::replacesplaceholderssplitacrosswordruns",
+      "label": ".replacesPlaceholdersSplitAcrossWordRuns",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java:21"
+    },
+    {
+      "id": "docxpackageprocessortest::docxpackageprocessortest::repeatsdynamictablerows",
+      "label": ".repeatsDynamicTableRows",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java:33"
+    },
+    {
+      "id": "docxpackageprocessortest::docxpackageprocessortest::row",
+      "label": ".row",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java:47"
+    },
+    {
+      "id": "docxpackageprocessortest::docxpackageprocessortest::minimaldocx",
+      "label": ".minimalDocx",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java:53"
+    },
+    {
+      "id": "docxpackageprocessortest::docxpackageprocessortest::docxentry",
+      "label": ".docxEntry",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java:70"
+    },
+    {
+      "id": "file::flatmappingjsonparsertest",
+      "label": "FlatMappingJsonParserTest.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/FlatMappingJsonParserTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/FlatMappingJsonParserTest.java:1"
+    },
+    {
+      "id": "flatmappingjsonparsertest::flatmappingjsonparsertest",
+      "label": "FlatMappingJsonParserTest",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/FlatMappingJsonParserTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/FlatMappingJsonParserTest.java:10"
+    },
+    {
+      "id": "flatmappingjsonparsertest::flatmappingjsonparsertest::parsesflatmappingwrapper",
+      "label": ".parsesFlatMappingWrapper",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/FlatMappingJsonParserTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/FlatMappingJsonParserTest.java:11"
+    },
+    {
+      "id": "flatmappingjsonparsertest::flatmappingjsonparsertest::parsesrawobjectforsimplebawcalls",
+      "label": ".parsesRawObjectForSimpleBawCalls",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/FlatMappingJsonParserTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/FlatMappingJsonParserTest.java:22"
+    },
+    {
+      "id": "file::tablemappingjsonparsertest",
+      "label": "TableMappingJsonParserTest.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/TableMappingJsonParserTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/TableMappingJsonParserTest.java:1"
+    },
+    {
+      "id": "tablemappingjsonparsertest::tablemappingjsonparsertest",
+      "label": "TableMappingJsonParserTest",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/TableMappingJsonParserTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/TableMappingJsonParserTest.java:11"
+    },
+    {
+      "id": "tablemappingjsonparsertest::tablemappingjsonparsertest::parsestablesobjectasstringmaps",
+      "label": ".parsesTablesObjectAsStringMaps",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/TableMappingJsonParserTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/TableMappingJsonParserTest.java:12"
+    },
+    {
+      "id": "file::xmlparttransformer",
+      "label": "XmlPartTransformer.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:1"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer",
+      "label": "XmlPartTransformer",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:32"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::transform",
+      "label": ".transform",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:62"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::replacesplitplaceholders",
+      "label": ".replaceSplitPlaceholders",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:87"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::collapsesplitplaceholders",
+      "label": ".collapseSplitPlaceholders",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:119"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::findcontainingwtstart",
+      "label": ".findContainingWtStart",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:196"
+    },
+    {
+      "id": "xmlparttransformer::splitreplacer",
+      "label": "SplitReplacer",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:211"
+    },
+    {
+      "id": "xmlparttransformer::splitreplacer::key",
+      "label": ".key",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:212"
+    },
+    {
+      "id": "xmlparttransformer::splitreplacer::replace",
+      "label": ".replace",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:213"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::applypattern",
+      "label": ".applyPattern",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:216"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::replacesimpleplaceholders",
+      "label": ".replaceSimplePlaceholders",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:228"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::xmlescape",
+      "label": ".xmlEscape",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:237"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::extractplaceholders",
+      "label": ".extractPlaceholders",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:241"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::repeattablerows",
+      "label": ".repeatTableRows",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:252"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::removebookmarks",
+      "label": ".removeBookmarks",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:281"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::repeatbodyparagraphs",
+      "label": ".repeatBodyParagraphs",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:303"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::replacetextnodesinrow",
+      "label": ".replaceTextNodesInRow",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:344"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::collectbylocalname",
+      "label": ".collectByLocalName",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:356"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::rowscopedvalues",
+      "label": ".rowScopedValues",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:369"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::replaceflatplaceholders",
+      "label": ".replaceFlatPlaceholders",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:377"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::replacetextnodes",
+      "label": ".replaceTextNodes",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:384"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::replaceplaceholdersacrossnodes",
+      "label": ".replacePlaceholdersAcrossNodes",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:409"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::nodeindexat",
+      "label": ".nodeIndexAt",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:458"
+    },
+    {
+      "id": "xmlparttransformer::placeholdermatch",
+      "label": "PlaceholderMatch",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:468"
+    },
+    {
+      "id": "xmlparttransformer::placeholdermatch::placeholdermatch",
+      "label": ".PlaceholderMatch",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:473"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::textnodesoutsidecheckboxcontrols",
+      "label": ".textNodesOutsideCheckboxControls",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:480"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::isinsidecheckboxcontrol",
+      "label": ".isInsideCheckboxControl",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:491"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::replaceplaceholders",
+      "label": ".replacePlaceholders",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:507"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::replacecheckboxcontrols",
+      "label": ".replaceCheckboxControls",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:524"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::checkboxchar",
+      "label": ".checkboxChar",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:577"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::firstchildelement",
+      "label": ".firstChildElement",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:595"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::parse",
+      "label": ".parse",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:608"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::setfeatureifsupported",
+      "label": ".setFeatureIfSupported",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:626"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::serialize",
+      "label": ".serialize",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:637"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::elementsbylocalname",
+      "label": ".elementsByLocalName",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:655"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::wordtextnodes",
+      "label": ".wordTextNodes",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:667"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::collectwordtextnodes",
+      "label": ".collectWordTextNodes",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:673"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::iswordtextnode",
+      "label": ".isWordTextNode",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:687"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::combinedtext",
+      "label": ".combinedText",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:693"
+    },
+    {
+      "id": "xmlparttransformer::xmlparttransformer::combinedtextfromnodes",
+      "label": ".combinedTextFromNodes",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:697"
+    },
+    {
+      "id": "file::personalloancashcowithoutinspayloadtest",
+      "label": "PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:1"
+    },
+    {
+      "id": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest",
+      "label": "PersonalLoanCashCoWithoutInsPayloadTest",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:25"
+    },
+    {
+      "id": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::payloadcoverstemplateandchecksbothguaranteeboxes",
+      "label": ".payloadCoversTemplateAndChecksBothGuaranteeBoxes",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:29"
+    },
+    {
+      "id": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::payloadkeys",
+      "label": ".payloadKeys",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:56"
+    },
+    {
+      "id": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::assertcheckboxchecked",
+      "label": ".assertCheckboxChecked",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:70"
+    },
+    {
+      "id": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::assertcheckboxcontainsonlysymbol",
+      "label": ".assertCheckboxContainsOnlySymbol",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:78"
+    },
+    {
+      "id": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::asserttextoutsidecheckbox",
+      "label": ".assertTextOutsideCheckbox",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:84"
+    },
+    {
+      "id": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::assertlinepreserveswordruns",
+      "label": ".assertLinePreservesWordRuns",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:90"
+    },
+    {
+      "id": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::checkboxxml",
+      "label": ".checkboxXml",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:109"
+    },
+    {
+      "id": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::resourcebytes",
+      "label": ".resourceBytes",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:118"
+    },
+    {
+      "id": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::docxentry",
+      "label": ".docxEntry",
+      "fileType": "code",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:134"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file::documentgenerationexception",
+      "target": "documentgenerationexception::documentgenerationexception",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerationException.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerationException.java:3",
+      "weight": 1
+    },
+    {
+      "source": "documentgenerationexception::documentgenerationexception",
+      "target": "documentgenerationexception::documentgenerationexception::documentgenerationexception",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerationException.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerationException.java:6",
+      "weight": 1
+    },
+    {
+      "source": "documentgenerationexception::documentgenerationexception",
+      "target": "documentgenerationexception::documentgenerationexception::geterrorcode",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerationException.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerationException.java:16",
+      "weight": 1
+    },
+    {
+      "source": "file::documentgenerator",
+      "target": "documentgenerator::documentgenerator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:15",
+      "weight": 1
+    },
+    {
+      "source": "documentgenerator::documentgenerator",
+      "target": "documentgenerator::documentgenerator::getinstance",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:25",
+      "weight": 1
+    },
+    {
+      "source": "documentgenerator::documentgenerator",
+      "target": "documentgenerator::documentgenerator::generatedocx",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:29",
+      "weight": 1
+    },
+    {
+      "source": "documentgenerator::documentgenerator",
+      "target": "documentgenerator::documentgenerator::extractplaceholders",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:56",
+      "weight": 1
+    },
+    {
+      "source": "documentgenerator::documentgenerator",
+      "target": "documentgenerator::documentgenerator::validatetemplateid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:83",
+      "weight": 1
+    },
+    {
+      "source": "documentgenerator::documentgenerator",
+      "target": "documentgenerator::documentgenerator::validatetemplatebytes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:89",
+      "weight": 1
+    },
+    {
+      "source": "documentgenerator::documentgenerator",
+      "target": "documentgenerator::documentgenerator::logstage",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:95",
+      "weight": 1
+    },
+    {
+      "source": "documentgenerator::documentgenerator",
+      "target": "documentgenerator::documentgenerator::bytelength",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:104",
+      "weight": 1
+    },
+    {
+      "source": "documentgenerator::documentgenerator",
+      "target": "documentgenerator::documentgenerator::stringlength",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGenerator.java:108",
+      "weight": 1
+    },
+    {
+      "source": "file::documentgeneratorfactory",
+      "target": "documentgeneratorfactory::documentgeneratorfactory",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGeneratorFactory.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGeneratorFactory.java:3",
+      "weight": 1
+    },
+    {
+      "source": "documentgeneratorfactory::documentgeneratorfactory",
+      "target": "documentgeneratorfactory::documentgeneratorfactory::documentgeneratorfactory",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGeneratorFactory.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGeneratorFactory.java:4",
+      "weight": 1
+    },
+    {
+      "source": "documentgeneratorfactory::documentgeneratorfactory",
+      "target": "documentgeneratorfactory::documentgeneratorfactory::getgenerator",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGeneratorFactory.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocumentGeneratorFactory.java:7",
+      "weight": 1
+    },
+    {
+      "source": "file::docxgenerationservice",
+      "target": "docxgenerationservice::docxgenerationservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:8",
+      "weight": 1
+    },
+    {
+      "source": "docxgenerationservice::docxgenerationservice",
+      "target": "docxgenerationservice::docxgenerationservice::docxgenerationservice",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:11",
+      "weight": 1
+    },
+    {
+      "source": "docxgenerationservice::docxgenerationservice",
+      "target": "docxgenerationservice::docxgenerationservice::generatedocxbase64frombytes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:14",
+      "weight": 1
+    },
+    {
+      "source": "docxgenerationservice::docxgenerationservice",
+      "target": "docxgenerationservice::docxgenerationservice::generatedocxbase64",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:26",
+      "weight": 1
+    },
+    {
+      "source": "docxgenerationservice::docxgenerationservice",
+      "target": "docxgenerationservice::docxgenerationservice::formaterror",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:37",
+      "weight": 1
+    },
+    {
+      "source": "docxgenerationservice::docxgenerationservice",
+      "target": "docxgenerationservice::docxgenerationservice::formatunexpectederror",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:46",
+      "weight": 1
+    },
+    {
+      "source": "docxgenerationservice::docxgenerationservice",
+      "target": "docxgenerationservice::docxgenerationservice::rootcausesummary",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:55",
+      "weight": 1
+    },
+    {
+      "source": "docxgenerationservice::docxgenerationservice",
+      "target": "docxgenerationservice::docxgenerationservice::preview",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:63",
+      "weight": 1
+    },
+    {
+      "source": "docxgenerationservice::docxgenerationservice",
+      "target": "docxgenerationservice::docxgenerationservice::valueorempty",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:71",
+      "weight": 1
+    },
+    {
+      "source": "file::docxgenerationservice",
+      "target": "docxgenerationservice::docxgenerationserviceexception",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:75",
+      "weight": 1
+    },
+    {
+      "source": "docxgenerationservice::docxgenerationserviceexception",
+      "target": "docxgenerationservice::docxgenerationserviceexception::docxgenerationserviceexception",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/api/DocxGenerationService.java:76",
+      "weight": 1
+    },
+    {
+      "source": "file::documentgeneratorcli",
+      "target": "documentgeneratorcli::documentgeneratorcli",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java:11",
+      "weight": 1
+    },
+    {
+      "source": "documentgeneratorcli::documentgeneratorcli",
+      "target": "documentgeneratorcli::documentgeneratorcli::documentgeneratorcli",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java:12",
+      "weight": 1
+    },
+    {
+      "source": "documentgeneratorcli::documentgeneratorcli",
+      "target": "documentgeneratorcli::documentgeneratorcli::main",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java:15",
+      "weight": 1
+    },
+    {
+      "source": "documentgeneratorcli::documentgeneratorcli",
+      "target": "documentgeneratorcli::documentgeneratorcli::resolvetemplate",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java:41",
+      "weight": 1
+    },
+    {
+      "source": "documentgeneratorcli::documentgeneratorcli",
+      "target": "documentgeneratorcli::documentgeneratorcli::resolvejson",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/cli/DocumentGeneratorCli.java:50",
+      "weight": 1
+    },
+    {
+      "source": "file::docxpackageprocessor",
+      "target": "docxpackageprocessor::docxpackageprocessor",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java:16",
+      "weight": 1
+    },
+    {
+      "source": "docxpackageprocessor::docxpackageprocessor",
+      "target": "docxpackageprocessor::docxpackageprocessor::generate",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java:20",
+      "weight": 1
+    },
+    {
+      "source": "docxpackageprocessor::docxpackageprocessor",
+      "target": "docxpackageprocessor::docxpackageprocessor::extractplaceholders",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java:48",
+      "weight": 1
+    },
+    {
+      "source": "docxpackageprocessor::docxpackageprocessor",
+      "target": "docxpackageprocessor::docxpackageprocessor::istransformablewordxmlpart",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java:66",
+      "weight": 1
+    },
+    {
+      "source": "docxpackageprocessor::docxpackageprocessor",
+      "target": "docxpackageprocessor::docxpackageprocessor::readallbytes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxPackageProcessor.java:78",
+      "weight": 1
+    },
+    {
+      "source": "file::docxtemplaterepository",
+      "target": "docxtemplaterepository::docxtemplaterepository",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java:11",
+      "weight": 1
+    },
+    {
+      "source": "docxtemplaterepository::docxtemplaterepository",
+      "target": "docxtemplaterepository::docxtemplaterepository::gettemplate",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java:14",
+      "weight": 1
+    },
+    {
+      "source": "docxtemplaterepository::docxtemplaterepository",
+      "target": "docxtemplaterepository::docxtemplaterepository::loadtemplateunchecked",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java:27",
+      "weight": 1
+    },
+    {
+      "source": "docxtemplaterepository::docxtemplaterepository",
+      "target": "docxtemplaterepository::docxtemplaterepository::loadtemplate",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java:35",
+      "weight": 1
+    },
+    {
+      "source": "docxtemplaterepository::docxtemplaterepository",
+      "target": "docxtemplaterepository::docxtemplaterepository::readallbytes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java:47",
+      "weight": 1
+    },
+    {
+      "source": "file::docxtemplaterepository",
+      "target": "docxtemplaterepository::templateloadruntimeexception",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java:58",
+      "weight": 1
+    },
+    {
+      "source": "docxtemplaterepository::templateloadruntimeexception",
+      "target": "docxtemplaterepository::templateloadruntimeexception::templateloadruntimeexception",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateRepository.java:59",
+      "weight": 1
+    },
+    {
+      "source": "file::docxtemplatesanitizer",
+      "target": "docxtemplatesanitizer::docxtemplatesanitizer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:16",
+      "weight": 1
+    },
+    {
+      "source": "docxtemplatesanitizer::docxtemplatesanitizer",
+      "target": "docxtemplatesanitizer::docxtemplatesanitizer::sanitize",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:22",
+      "weight": 1
+    },
+    {
+      "source": "docxtemplatesanitizer::docxtemplatesanitizer",
+      "target": "docxtemplatesanitizer::docxtemplatesanitizer::shouldsanitize",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:49",
+      "weight": 1
+    },
+    {
+      "source": "docxtemplatesanitizer::docxtemplatesanitizer",
+      "target": "docxtemplatesanitizer::docxtemplatesanitizer::sanitizexml",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:53",
+      "weight": 1
+    },
+    {
+      "source": "docxtemplatesanitizer::docxtemplatesanitizer",
+      "target": "docxtemplatesanitizer::docxtemplatesanitizer::normalizedecimalwordattributes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:58",
+      "weight": 1
+    },
+    {
+      "source": "docxtemplatesanitizer::docxtemplatesanitizer",
+      "target": "docxtemplatesanitizer::docxtemplatesanitizer::roundedinteger",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:69",
+      "weight": 1
+    },
+    {
+      "source": "docxtemplatesanitizer::docxtemplatesanitizer",
+      "target": "docxtemplatesanitizer::docxtemplatesanitizer::normalizeshortlanguagetags",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:74",
+      "weight": 1
+    },
+    {
+      "source": "docxtemplatesanitizer::docxtemplatesanitizer",
+      "target": "docxtemplatesanitizer::docxtemplatesanitizer::defaultregion",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:86",
+      "weight": 1
+    },
+    {
+      "source": "docxtemplatesanitizer::docxtemplatesanitizer",
+      "target": "docxtemplatesanitizer::docxtemplatesanitizer::readallbytes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/DocxTemplateSanitizer.java:96",
+      "weight": 1
+    },
+    {
+      "source": "file::placeholderpattern",
+      "target": "placeholderpattern::placeholderpattern",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/engine/PlaceholderPattern.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/engine/PlaceholderPattern.java:5",
+      "weight": 1
+    },
+    {
+      "source": "placeholderpattern::placeholderpattern",
+      "target": "placeholderpattern::placeholderpattern::placeholderpattern",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/engine/PlaceholderPattern.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/engine/PlaceholderPattern.java:8",
+      "weight": 1
+    },
+    {
+      "source": "file::flatmappingjsonparser",
+      "target": "flatmappingjsonparser::flatmappingjsonparser",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/FlatMappingJsonParser.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/FlatMappingJsonParser.java:12",
+      "weight": 1
+    },
+    {
+      "source": "flatmappingjsonparser::flatmappingjsonparser",
+      "target": "flatmappingjsonparser::flatmappingjsonparser::parse",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/FlatMappingJsonParser.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/FlatMappingJsonParser.java:16",
+      "weight": 1
+    },
+    {
+      "source": "flatmappingjsonparser::flatmappingjsonparser",
+      "target": "flatmappingjsonparser::flatmappingjsonparser::stringify",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/FlatMappingJsonParser.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/FlatMappingJsonParser.java:41",
+      "weight": 1
+    },
+    {
+      "source": "file::tablemappingjsonparser",
+      "target": "tablemappingjsonparser::tablemappingjsonparser",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java:13",
+      "weight": 1
+    },
+    {
+      "source": "tablemappingjsonparser::tablemappingjsonparser",
+      "target": "tablemappingjsonparser::tablemappingjsonparser::parse",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java:16",
+      "weight": 1
+    },
+    {
+      "source": "tablemappingjsonparser::tablemappingjsonparser",
+      "target": "tablemappingjsonparser::tablemappingjsonparser::parserows",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java:41",
+      "weight": 1
+    },
+    {
+      "source": "tablemappingjsonparser::tablemappingjsonparser",
+      "target": "tablemappingjsonparser::tablemappingjsonparser::stringify",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/json/TableMappingJsonParser.java:57",
+      "weight": 1
+    },
+    {
+      "source": "file::bawpersonalloanpayloadtest",
+      "target": "bawpersonalloanpayloadtest::bawpersonalloanpayloadtest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java:23",
+      "weight": 1
+    },
+    {
+      "source": "bawpersonalloanpayloadtest::bawpersonalloanpayloadtest",
+      "target": "bawpersonalloanpayloadtest::bawpersonalloanpayloadtest::bawpayloadmatchesbundledpersonalloantemplateandgeneratesdocx",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java:24",
+      "weight": 1
+    },
+    {
+      "source": "bawpersonalloanpayloadtest::bawpersonalloanpayloadtest",
+      "target": "bawpersonalloanpayloadtest::bawpersonalloanpayloadtest::flatmappingkeys",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java:47",
+      "weight": 1
+    },
+    {
+      "source": "bawpersonalloanpayloadtest::bawpersonalloanpayloadtest",
+      "target": "bawpersonalloanpayloadtest::bawpersonalloanpayloadtest::docxentry",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java:54",
+      "weight": 1
+    },
+    {
+      "source": "bawpersonalloanpayloadtest::bawpersonalloanpayloadtest",
+      "target": "bawpersonalloanpayloadtest::bawpersonalloanpayloadtest::resourcebytes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/BawPersonalLoanPayloadTest.java:74",
+      "weight": 1
+    },
+    {
+      "source": "file::concurrentdocxgenerationtest",
+      "target": "concurrentdocxgenerationtest::concurrentdocxgenerationtest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/ConcurrentDocxGenerationTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/ConcurrentDocxGenerationTest.java:16",
+      "weight": 1
+    },
+    {
+      "source": "concurrentdocxgenerationtest::concurrentdocxgenerationtest",
+      "target": "concurrentdocxgenerationtest::concurrentdocxgenerationtest::servicesupportsconcurrentbawcalls",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/ConcurrentDocxGenerationTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/ConcurrentDocxGenerationTest.java:17",
+      "weight": 1
+    },
+    {
+      "source": "file::docxgenerationservicetest",
+      "target": "docxgenerationservicetest::docxgenerationservicetest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java:14",
+      "weight": 1
+    },
+    {
+      "source": "docxgenerationservicetest::docxgenerationservicetest",
+      "target": "docxgenerationservicetest::docxgenerationservicetest::generatesbase64docxforbawsupportedsignature",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java:15",
+      "weight": 1
+    },
+    {
+      "source": "docxgenerationservicetest::docxgenerationservicetest",
+      "target": "docxgenerationservicetest::docxgenerationservicetest::throwshelpfulerrorwhentemplateismissing",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java:26",
+      "weight": 1
+    },
+    {
+      "source": "docxgenerationservicetest::docxgenerationservicetest",
+      "target": "docxgenerationservicetest::docxgenerationservicetest::throwshelpfulerrorwhenjsonisinvalid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java:37",
+      "weight": 1
+    },
+    {
+      "source": "docxgenerationservicetest::docxgenerationservicetest",
+      "target": "docxgenerationservicetest::docxgenerationservicetest::resourcestring",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java:49",
+      "weight": 1
+    },
+    {
+      "source": "docxgenerationservicetest::docxgenerationservicetest",
+      "target": "docxgenerationservicetest::docxgenerationservicetest::resourcebytes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxGenerationServiceTest.java:53",
+      "weight": 1
+    },
+    {
+      "source": "file::docxpackageprocessortest",
+      "target": "docxpackageprocessortest::docxpackageprocessortest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java:20",
+      "weight": 1
+    },
+    {
+      "source": "docxpackageprocessortest::docxpackageprocessortest",
+      "target": "docxpackageprocessortest::docxpackageprocessortest::replacesplaceholderssplitacrosswordruns",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java:21",
+      "weight": 1
+    },
+    {
+      "source": "docxpackageprocessortest::docxpackageprocessortest",
+      "target": "docxpackageprocessortest::docxpackageprocessortest::repeatsdynamictablerows",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java:33",
+      "weight": 1
+    },
+    {
+      "source": "docxpackageprocessortest::docxpackageprocessortest",
+      "target": "docxpackageprocessortest::docxpackageprocessortest::row",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java:47",
+      "weight": 1
+    },
+    {
+      "source": "docxpackageprocessortest::docxpackageprocessortest",
+      "target": "docxpackageprocessortest::docxpackageprocessortest::minimaldocx",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java:53",
+      "weight": 1
+    },
+    {
+      "source": "docxpackageprocessortest::docxpackageprocessortest",
+      "target": "docxpackageprocessortest::docxpackageprocessortest::docxentry",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/DocxPackageProcessorTest.java:70",
+      "weight": 1
+    },
+    {
+      "source": "file::flatmappingjsonparsertest",
+      "target": "flatmappingjsonparsertest::flatmappingjsonparsertest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/FlatMappingJsonParserTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/FlatMappingJsonParserTest.java:10",
+      "weight": 1
+    },
+    {
+      "source": "flatmappingjsonparsertest::flatmappingjsonparsertest",
+      "target": "flatmappingjsonparsertest::flatmappingjsonparsertest::parsesflatmappingwrapper",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/FlatMappingJsonParserTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/FlatMappingJsonParserTest.java:11",
+      "weight": 1
+    },
+    {
+      "source": "flatmappingjsonparsertest::flatmappingjsonparsertest",
+      "target": "flatmappingjsonparsertest::flatmappingjsonparsertest::parsesrawobjectforsimplebawcalls",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/FlatMappingJsonParserTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/FlatMappingJsonParserTest.java:22",
+      "weight": 1
+    },
+    {
+      "source": "file::tablemappingjsonparsertest",
+      "target": "tablemappingjsonparsertest::tablemappingjsonparsertest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/TableMappingJsonParserTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/TableMappingJsonParserTest.java:11",
+      "weight": 1
+    },
+    {
+      "source": "tablemappingjsonparsertest::tablemappingjsonparsertest",
+      "target": "tablemappingjsonparsertest::tablemappingjsonparsertest::parsestablesobjectasstringmaps",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/TableMappingJsonParserTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/TableMappingJsonParserTest.java:12",
+      "weight": 1
+    },
+    {
+      "source": "file::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:32",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::transform",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:62",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::replacesplitplaceholders",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:87",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::collapsesplitplaceholders",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:119",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::findcontainingwtstart",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:196",
+      "weight": 1
+    },
+    {
+      "source": "file::xmlparttransformer",
+      "target": "xmlparttransformer::splitreplacer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:211",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::splitreplacer",
+      "target": "xmlparttransformer::splitreplacer::key",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:212",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::splitreplacer",
+      "target": "xmlparttransformer::splitreplacer::replace",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:213",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::applypattern",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:216",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::replacesimpleplaceholders",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:228",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::xmlescape",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:237",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::extractplaceholders",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:241",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::repeattablerows",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:252",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::removebookmarks",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:281",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::repeatbodyparagraphs",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:303",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::replacetextnodesinrow",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:344",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::collectbylocalname",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:356",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::rowscopedvalues",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:369",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::replaceflatplaceholders",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:377",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::replacetextnodes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:384",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::replaceplaceholdersacrossnodes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:409",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::nodeindexat",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:458",
+      "weight": 1
+    },
+    {
+      "source": "file::xmlparttransformer",
+      "target": "xmlparttransformer::placeholdermatch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:468",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::placeholdermatch",
+      "target": "xmlparttransformer::placeholdermatch::placeholdermatch",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:473",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::textnodesoutsidecheckboxcontrols",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:480",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::isinsidecheckboxcontrol",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:491",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::replaceplaceholders",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:507",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::replacecheckboxcontrols",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:524",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::checkboxchar",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:577",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::firstchildelement",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:595",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::parse",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:608",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::setfeatureifsupported",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:626",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::serialize",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:637",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::elementsbylocalname",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:655",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::wordtextnodes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:667",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::collectwordtextnodes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:673",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::iswordtextnode",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:687",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::combinedtext",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:693",
+      "weight": 1
+    },
+    {
+      "source": "xmlparttransformer::xmlparttransformer",
+      "target": "xmlparttransformer::xmlparttransformer::combinedtextfromnodes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/main/java/com/bawdocgen/docx/XmlPartTransformer.java:697",
+      "weight": 1
+    },
+    {
+      "source": "file::personalloancashcowithoutinspayloadtest",
+      "target": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:25",
+      "weight": 1
+    },
+    {
+      "source": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest",
+      "target": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::payloadcoverstemplateandchecksbothguaranteeboxes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:29",
+      "weight": 1
+    },
+    {
+      "source": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest",
+      "target": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::payloadkeys",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:56",
+      "weight": 1
+    },
+    {
+      "source": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest",
+      "target": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::assertcheckboxchecked",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:70",
+      "weight": 1
+    },
+    {
+      "source": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest",
+      "target": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::assertcheckboxcontainsonlysymbol",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:78",
+      "weight": 1
+    },
+    {
+      "source": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest",
+      "target": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::asserttextoutsidecheckbox",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:84",
+      "weight": 1
+    },
+    {
+      "source": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest",
+      "target": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::assertlinepreserveswordruns",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:90",
+      "weight": 1
+    },
+    {
+      "source": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest",
+      "target": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::checkboxxml",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:109",
+      "weight": 1
+    },
+    {
+      "source": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest",
+      "target": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::resourcebytes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:118",
+      "weight": 1
+    },
+    {
+      "source": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest",
+      "target": "personalloancashcowithoutinspayloadtest::personalloancashcowithoutinspayloadtest::docxentry",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "sourceFile": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java",
+      "sourceLocation": "/home/mohamed/Documents/Doc-Gen/src/test/java/com/bawdocgen/PersonalLoanCashCoWithoutInsPayloadTest.java:134",
+      "weight": 1
+    }
+  ],
+  "metadata": {
+    "files": 19,
+    "nodes": 153,
+    "edges": 134,
+    "builtAt": "2026-06-09T20:47:27.083Z"
+  }
+}
