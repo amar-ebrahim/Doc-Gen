@@ -1,0 +1,9 @@
+{
+  "flat_mapping": {
+    "test": "Ammar",
+    "barcodeFlag": "true",
+    "barcodeContent": "1234_123",
+    "barcodeLocation": "BarcodeHere",
+    "BarCodeText": "1234_123"
+  }
+}

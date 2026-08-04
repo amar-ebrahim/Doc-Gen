@@ -19,6 +19,9 @@
     "DisbursementDate": "2023-10-10",
     "First_PaymentDate": "2023-11-10",
     "InterestRate": 1,
-    "ApplicationFees": "sadadsa"
+    "ApplicationFees": "sadadsa",
+    "barcodeFlag": true,
+    "barcodeContent": "content",
+    "barcodeLocation": "PlaceHolder"
   }
 }

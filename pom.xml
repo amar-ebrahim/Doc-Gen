@@ -18,6 +18,7 @@
         <jackson.version>2.17.2</jackson.version>
         <junit.version>5.10.3</junit.version>
         <slf4j.version>2.0.13</slf4j.version>
+        <zxing.version>3.5.3</zxing.version>
     </properties>
 
     <dependencies>
@@ -25,6 +26,11 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>${zxing.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -93,6 +99,10 @@
                                 <relocation>
                                     <pattern>com.fasterxml.jackson</pattern>
                                     <shadedPattern>com.bawdocgen.shaded.jackson</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>com.google.zxing</pattern>
+                                    <shadedPattern>com.bawdocgen.shaded.zxing</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>

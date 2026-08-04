@@ -59,6 +59,103 @@ class XmlPartTransformer {
             + "(<w:t[^>]*>)([A-Za-z0-9_.\\[\\]-]*)\\}\\}([^<]*</w:t>)",  // g6=t2-open, g7=key-end, g8=text-after-}}+</w:t>
             Pattern.DOTALL);
 
+    static boolean isTruthy(String value) {
+        return value != null && TRUTHY.contains(value.trim().toLowerCase());
+    }
+
+    static final class ImagePlaceholderResult {
+        final byte[] xmlBytes;
+        final boolean inserted;
+
+        ImagePlaceholderResult(byte[] xmlBytes, boolean inserted) {
+            this.xmlBytes = xmlBytes;
+            this.inserted = inserted;
+        }
+    }
+
+    // Replaces every <w:r> run whose <w:t> contains the exact literal "{{key}}" with a run
+    // containing an inline <w:drawing> that embeds the image via the given relationship id.
+    // Runs collapseSplitPlaceholders first so a key split across multiple <w:t> nodes (Word's
+    // spell-checker does this for camelCase/underscored keys) is normalised into a single node.
+    ImagePlaceholderResult insertImagePlaceholder(byte[] xmlBytes, String key, String relationshipId,
+                                                   int widthEmu, int heightEmu, String imageName) {
+        String xml = new String(xmlBytes, StandardCharsets.UTF_8);
+        xml = collapseSplitPlaceholders(xml);
+        String token = "{{" + key + "}}";
+        boolean inserted = false;
+        int searchFrom = 0;
+        int occurrence = 0;
+
+        while (true) {
+            int tokenIdx = xml.indexOf(token, searchFrom);
+            if (tokenIdx < 0) {
+                break;
+            }
+            int wtStart = findContainingWtStart(xml, tokenIdx);
+            if (wtStart < 0) {
+                searchFrom = tokenIdx + token.length();
+                continue;
+            }
+            int wtTagEnd = xml.indexOf('>', wtStart) + 1;
+            int wtCloseTag = xml.indexOf("</w:t>", wtTagEnd);
+            int runStart = findEnclosingRunStart(xml, wtStart);
+            if (wtCloseTag < 0 || runStart < 0) {
+                searchFrom = tokenIdx + token.length();
+                continue;
+            }
+            int runEnd = xml.indexOf("</w:r>", wtCloseTag);
+            if (runEnd < 0) {
+                searchFrom = tokenIdx + token.length();
+                continue;
+            }
+            runEnd += "</w:r>".length();
+
+            occurrence++;
+            String drawingRun = buildDrawingRunXml(relationshipId, widthEmu, heightEmu, imageName, occurrence);
+            xml = xml.substring(0, runStart) + drawingRun + xml.substring(runEnd);
+            inserted = true;
+            searchFrom = runStart + drawingRun.length();
+        }
+
+        return new ImagePlaceholderResult(xml.getBytes(StandardCharsets.UTF_8), inserted);
+    }
+
+    // Finds the <w:r> (or <w:r ...>) start tag that encloses the <w:t> starting at wtStart.
+    private int findEnclosingRunStart(String xml, int wtStart) {
+        int idx = wtStart;
+        while (true) {
+            idx = xml.lastIndexOf("<w:r", idx - 1);
+            if (idx < 0 || idx + 4 >= xml.length()) {
+                return -1;
+            }
+            char next = xml.charAt(idx + 4);
+            if (next == '>' || next == ' ') {
+                return idx;
+            }
+        }
+    }
+
+    private String buildDrawingRunXml(String relationshipId, int widthEmu, int heightEmu, String imageName, int occurrence) {
+        long id = 1000000000L + occurrence;
+        String name = xmlEscape(imageName);
+        return "<w:r><w:drawing"
+                + " xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\""
+                + " xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\""
+                + " xmlns:pic=\"http://schemas.openxmlformats.org/drawingml/2006/picture\""
+                + " xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\">"
+                + "<wp:inline distT=\"0\" distB=\"0\" distL=\"0\" distR=\"0\">"
+                + "<wp:extent cx=\"" + widthEmu + "\" cy=\"" + heightEmu + "\"/>"
+                + "<wp:effectExtent l=\"0\" t=\"0\" r=\"0\" b=\"0\"/>"
+                + "<wp:docPr id=\"" + id + "\" name=\"" + name + "\"/>"
+                + "<wp:cNvGraphicFramePr><a:graphicFrameLocks noChangeAspect=\"1\"/></wp:cNvGraphicFramePr>"
+                + "<a:graphic><a:graphicData uri=\"http://schemas.openxmlformats.org/drawingml/2006/picture\">"
+                + "<pic:pic><pic:nvPicPr><pic:cNvPr id=\"" + id + "\" name=\"" + name + "\"/><pic:cNvPicPr/></pic:nvPicPr>"
+                + "<pic:blipFill><a:blip r:embed=\"" + relationshipId + "\"/><a:stretch><a:fillRect/></a:stretch></pic:blipFill>"
+                + "<pic:spPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"" + widthEmu + "\" cy=\"" + heightEmu + "\"/></a:xfrm>"
+                + "<a:prstGeom prst=\"rect\"><a:avLst/></a:prstGeom></pic:spPr></pic:pic>"
+                + "</a:graphicData></a:graphic></wp:inline></w:drawing></w:r>";
+    }
+
     byte[] transform(byte[] xmlBytes, Map<String, String> values,
                      Map<String, List<Map<String, String>>> tables) throws DocumentGenerationException {
         String xml = new String(xmlBytes, StandardCharsets.UTF_8);
@@ -463,7 +560,7 @@ class XmlPartTransformer {
             String value = values.get(key);
             if (value == null) continue;
 
-            boolean checked = TRUTHY.contains(value.trim().toLowerCase());
+            boolean checked = isTruthy(value);
 
             Element checkedEl = firstChildElement(checkboxEl, W14_NS, "checked");
             if (checkedEl != null) {
