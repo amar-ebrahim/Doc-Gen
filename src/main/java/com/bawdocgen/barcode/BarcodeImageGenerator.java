@@ -18,7 +18,7 @@ import java.util.Map;
 
 public class BarcodeImageGenerator {
     private static final int DEFAULT_CODE128_WIDTH = 300;
-    private static final int DEFAULT_CODE128_HEIGHT = 100;
+    private static final int DEFAULT_CODE128_HEIGHT = 50;
     private static final int DEFAULT_QR_SIZE = 200;
 
     public BarcodeImage generate(String content, String barcodeType, Integer requestedWidth, Integer requestedHeight)
