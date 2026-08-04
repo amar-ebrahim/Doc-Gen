@@ -479,7 +479,7 @@ class XmlPartTransformer {
     }
 
     private void replaceTextNodes(Node container, Map<String, String> values) {
-        List<Node> textNodes = wordTextNodes(container);
+        List<Node> textNodes = textNodesOutsideCheckboxControls(container);
         if (textNodes.isEmpty()) {
             return;
         }
@@ -507,6 +507,33 @@ class XmlPartTransformer {
                 textNodes.get(i).setTextContent("");
             }
         }
+    }
+
+    private List<Node> textNodesOutsideCheckboxControls(Node container) {
+        List<Node> textNodes = wordTextNodes(container);
+        List<Node> result = new ArrayList<>();
+        for (Node textNode : textNodes) {
+            if (!isInsideCheckboxControl(textNode, container)) {
+                result.add(textNode);
+            }
+        }
+        return result;
+    }
+
+    private boolean isInsideCheckboxControl(Node node, Node boundary) {
+        Node ancestor = node.getParentNode();
+        while (ancestor != null && ancestor != boundary) {
+            if (ancestor instanceof Element
+                    && "sdt".equals(ancestor.getLocalName())
+                    && WORD_NS.equals(ancestor.getNamespaceURI())) {
+                Element sdtPr = firstChildElement(ancestor, WORD_NS, "sdtPr");
+                if (sdtPr != null && firstChildElement(sdtPr, W14_NS, "checkbox") != null) {
+                    return true;
+                }
+            }
+            ancestor = ancestor.getParentNode();
+        }
+        return false;
     }
 
     private String replacePlaceholders(String text, Map<String, String> values) {
